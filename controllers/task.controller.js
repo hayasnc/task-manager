@@ -15,7 +15,7 @@ exports.task_create = function (req, res) {
         }
     );
 
-    task.save(function (err,task,next) {
+    task.save(function (err,task) {
         if (err) {
             return next(err);
         }
